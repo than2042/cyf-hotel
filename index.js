@@ -29,6 +29,9 @@ app.use(bodyparser.json());
 app.get("/", function(req, res, next) {
   res.render("home");
 });
+app.get("/invoices", function (req, res, next) {
+  res.render("invoices");
+});
 
 app.listen(SERVER_PORT, () => {
   console.info(`Server started at http://localhost:${SERVER_PORT}`);
